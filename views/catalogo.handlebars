@@ -1,0 +1,25 @@
+<h1>Catálogo de Equipamentos Astronômicos</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Equipamento</th>
+            <th>Marca</th>
+            <th>Especificação</th>
+            <th>Aluno</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each equipamentos}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{equipamento}}</td>
+                <td>{{marca}}</td>
+                <td>{{especificacao}}</td>
+                <td>{{aluno_responsavel}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
